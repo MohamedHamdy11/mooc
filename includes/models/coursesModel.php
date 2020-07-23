@@ -16,6 +16,7 @@ class coursesModel extends model
         if(System::Get('db')->Insert('courses',$dataArray))
             return true;
 
+        $this->setError(' error adding course'.System::Get('db')->getDBErrors());
         return false;
 
     }

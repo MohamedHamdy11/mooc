@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 //abthalut path
 define('ROOT',dirname(__FILE__));
 define('INCLUDES',ROOT.'/includes');

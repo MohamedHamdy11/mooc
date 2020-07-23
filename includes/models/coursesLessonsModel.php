@@ -7,6 +7,7 @@ class coursesLessonsModel extends model
         if(System::Get('db')->Insert('courses_lessons',$dataArray))
             return true;
 
+        $this->setError(' error adding lesson , '.System::Get('db')->getDBErrors());
         return false;
     }
 
@@ -24,7 +25,7 @@ class coursesLessonsModel extends model
     public function deleteLesson($id)
     {
         if(System::Get('db')->Delete('courses_lessons',"WHERE `lesson_id`=$id"))
-            return true;
+             return true;
 
         return false;
     }
@@ -41,6 +42,15 @@ class coursesLessonsModel extends model
         return [];
     }
 
+
+    public function getLessonsByCourseId($courseId)
+    {
+        $lessons = $this->getLessons("WHERE `courses_lessons`.`lesson_course`=$courseId");
+
+        if(count($lessons)>0)
+            return $lessons;
+        return [];
+    }
 
 
     public function getLesson($id)

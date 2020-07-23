@@ -94,5 +94,27 @@ class usersModel extends model
     }
 
 
+    public function login($username,$password)
+    {
+        $users= $this->getUsers("WHERE `users`.`username`='$username' AND `users`.`password`='$password' LIMIT 1");
+
+        if(count($users)>0)
+        {
+            $this->userData = $users[0];
+            return true;
+        }
+
+        $this->setError('invalid username or password');
+        return false;
+    }
+
+
+    public function getUserData()
+    {
+        return $this->userData;
+    }
+
+
+
 
 }

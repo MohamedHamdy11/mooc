@@ -1,13 +1,27 @@
 <?php
 
+session_start();
+
 require('globals.php');
 require(MODELS.'/usersGroupsModel.php');
 require(MODELS.'/usersModel.php');
 require(MODELS.'/coursesCategoriesModel.php');
-require(MODELS.'/coursesModel.php'); //error add -2
-require(MODELS.'/coursesLessonsModel.php'); //error add -3
+require(MODELS.'/coursesModel.php'); //error add -2  (Field 'course_cover' doesn't have a default value)
+require(MODELS.'/coursesLessonsModel.php'); //error add -3 (this is error field lesson_video doesn't have a default value)
 require(MODELS.'/coursesLessonsCommentModel.php');
+require(CONTROLLERS.'/adminController.php');
+$_SESSION['user']['user_group'] = 1;
 
+$ac = new adminController();
+
+if(!$ac->index())
+    echo $ac->getControllerErrors();
+
+print_r($_SESSION['errors']);
+
+
+
+/*
 $clcm = new coursesLessonsCommentsModel();
 
 $data = array(
@@ -19,21 +33,26 @@ $data = array(
 
 //$clcm->addComment($data);
 print_r($clcm->getComments());
+*/
 
 
 /*
 $clm = new coursesLessonsModel();
 
 //error fuction add lesson
-$data = array(
-    'lesson_title'=>'test lesson updated',
+$lesson = array(
+    'lesson_title'=>'test lesson updated 4',
     'lesson_description'=>'the is test',
-    'lesson_cover'=>'test1.jpg',
+    'lesson_cover'=>'test4.jpg',
     'lesson_instructor'=>1,
     'lesson_course'=>1
 );
-$clm->addLesson($data);
-print_r($clm->updateLesson(1,$data));
+
+if($clm->addLesson($lesson))
+    echo ' done';
+else
+    print_r($clm->getErrors());
+//print_r($clm->updateLesson(1,$data));
 */
 
 
@@ -49,11 +68,13 @@ $data = array(
 
 );
 
+
 if($cm ->addCourse($data))
-    echo'done';
+    echo ' done';
 else
-    echo'error';
+    print_r($cm->getErrors());
 */
+
 
 /*
 $ccm = new coursesCategoriesModel();

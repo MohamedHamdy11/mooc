@@ -210,7 +210,7 @@ class mysqlDBN
 
     public function getDBErrors()
     {
-        echo $this->connection->error;
+        return $this->connection->error;
     }
 
 
