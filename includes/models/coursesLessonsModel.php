@@ -2,6 +2,11 @@
 
 class coursesLessonsModel extends model
 {
+    /**
+     * add lesson
+     * @param $dataArray
+     * @return bool
+     */
     public function addLesson($dataArray)
     {
         if(System::Get('db')->Insert('courses_lessons',$dataArray))
@@ -12,26 +17,43 @@ class coursesLessonsModel extends model
     }
 
 
+    /**
+     * update lesson
+     * @param $id
+     * @param $dataArray
+     * @return bool
+     */
     public function updateLesson($id,$dataArray)
     {
         if(System::Get('db')->Update('courses_lessons',$dataArray,"WHERE `lesson_id`=$id"))
             return true;
 
+        $this->setError(' error updateing lesson , '.System::Get('db')->getDBErrors());
         return false;
     }
 
 
-
+    /**
+     * delete lesson
+     * @param $id
+     * @return bool
+     */
     public function deleteLesson($id)
     {
         if(System::Get('db')->Delete('courses_lessons',"WHERE `lesson_id`=$id"))
              return true;
 
+
+        $this->setError(' error delete lesson , '.System::Get('db')->getDBErrors());
         return false;
     }
 
 
-
+    /**
+     * get lessons
+     * @param string $extra
+     * @return array
+     */
     public function getLessons($extra='')
     {
         System::Get('db')->Execute("SELECT `courses_lessons`.*,`courses`.`course_title`,`users`.`username` FROM `courses_lessons` LEFT JOIN `courses` ON `courses_lessons`.`lesson_course`=`courses`.`course_id` LEFT JOIN `users` ON `courses_lessons`.`lesson_instructor`=`users`.`user_id` $extra");
@@ -49,6 +71,7 @@ class coursesLessonsModel extends model
 
         if(count($lessons)>0)
             return $lessons;
+
         return [];
     }
 

@@ -19,6 +19,7 @@ class coursesStudentsModel extends model
         if(System::Get('db')->Insert('courses_students',$data))
             return true;
 
+        $this->setError(' error adding student to course'.System::Get('db')->getDBErrors());
         return false;
     }
 
@@ -34,6 +35,7 @@ class coursesStudentsModel extends model
         if(System::Get('db')->Delete('courses_students',"WHERE `course_id`=$courseId AND `student_id`=$studentId"))
             return true;
 
+        $this->setError(' error delete student from course'.System::Get('db')->getDBErrors());
         return false;
     }
 

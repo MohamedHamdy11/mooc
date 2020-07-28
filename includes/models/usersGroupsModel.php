@@ -22,6 +22,7 @@ class usersGroupsModel extends model
         if(System::Get('db')->Insert('users_groups',$data))
             return true;
 
+        $this->setError(' error adding user group'.System::Get('db')->getDBErrors());
         return false;
 
     }
@@ -41,6 +42,7 @@ class usersGroupsModel extends model
         if(System::Get('db')->Update('users_groups',$data,"WHERE `group_id`=$id"))
             return true;
 
+        $this->setError(' error update user group '.System::Get('db')->getDBErrors());
         return false;
 
 
@@ -54,9 +56,10 @@ class usersGroupsModel extends model
     public function deleteUserGroup($id)
     {
 
-        if(System::Get('db')->Delete ('users_groups',"WHERE `group_id`=$id"))
+        if(System::Get('db')->Delete('users_groups',"WHERE `group_id`=$id"))
             return true;
 
+        $this->setError(' error delete user group '.System::Get('db')->getDBErrors());
         return false;
 
 

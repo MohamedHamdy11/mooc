@@ -1,9 +1,7 @@
 <?php
 
-
 class controller
 {
-
     public function checkPermission($groupId)
     {
         if(isset($_SESSION['user']['user_group'])&&  $_SESSION['user']['user_group'] != $groupId)
@@ -37,30 +35,21 @@ class controller
 
     }
 
-
     public function setControllerErrors($errors)
     {
-        $_SESSION['errors'] = $errors;
-    }
-
-
-    public function getControllerErrors()
-    {
-        if(isset($_SESSION['errors']) && count($_SESSION['errors'])>0)
+        if(is_array($errors))
         {
-            $errors = $_SESSION['errors'];
-            $HTMLerror = '<ul>';
-            foreach($errors as $error)
-            {
-                $HTMLerror .= "<li>$error</li>";
+            foreach ($errors as $error) {
+                $_SESSION['errors'][] = $error;
             }
-            $HTMLerror .= '</ul>';
 
-            $_SESSION['errors'] = [];
-            return $HTMLerror;
+        }
+        else
+        {
+            $_SESSION['errors'][] = $errors;
         }
 
-        return null;
     }
+
 
 }

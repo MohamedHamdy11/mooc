@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+//session_start();
 
 require('globals.php');
 require(MODELS.'/usersGroupsModel.php');
@@ -10,15 +10,19 @@ require(MODELS.'/coursesModel.php'); //error add -2  (Field 'course_cover' doesn
 require(MODELS.'/coursesLessonsModel.php'); //error add -3 (this is error field lesson_video doesn't have a default value)
 require(MODELS.'/coursesLessonsCommentModel.php');
 require(CONTROLLERS.'/adminController.php');
-$_SESSION['user']['user_group'] = 1;
+//$_SESSION['user']['user_group'] = 1;
 
+
+echo hashPasswords(12345);
+
+/*
 $ac = new adminController();
 
 if(!$ac->index())
     echo $ac->getControllerErrors();
 
 print_r($_SESSION['errors']);
-
+*/
 
 
 /*

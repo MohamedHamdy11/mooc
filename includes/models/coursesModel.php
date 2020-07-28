@@ -10,7 +10,6 @@ class coursesModel extends model
      * @param $dataArray
      * @return bool
      */
-
     public function addCourse($dataArray)
     {
         if(System::Get('db')->Insert('courses',$dataArray))
@@ -33,6 +32,7 @@ class coursesModel extends model
         if(System::Get('db')->Update('courses',$dataArray,"WHERE `course_id`=$id"))
             return true;
 
+        $this->setError(' error updateing course'.System::Get('db')->getDBErrors());
         return false;
     }
 
@@ -47,11 +47,13 @@ class coursesModel extends model
         if(System::Get('db')->Delete('courses',"WHERE `course_id`=$id"))
             return true;
 
+        $this->setError(' error delete course'.System::Get('db')->getDBErrors());
         return false;
     }
 
 
     /**
+     * get courses
      * @param string $extra
      * @return array
      */

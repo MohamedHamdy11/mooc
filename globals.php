@@ -11,6 +11,8 @@ define('VIEWS',ROOT.'/templates');
 define('ASSETS',ROOT.'/assets');
 
 require(INCLUDES.'/config.php');
+require(INCLUDES.'/general.functions.php');
+require(INCLUDES.'/Redirect.php');
 require(CONTROLLERS.'/controller.php');
 require(MODELS.'/model.php');
 require(INCLUDES.'/System.php');

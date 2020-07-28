@@ -19,6 +19,7 @@ class usersModel extends model
         if(System::Get('db')->Insert('users',$dataArray))
             return true;
 
+        $this->setError(' error adding user , '.System::Get('db')->getDBErrors());
         return false;
 
     }
@@ -34,6 +35,7 @@ class usersModel extends model
         if(System::Get('db')->Update('users',$dataArray,"WHERE `user_id`=$id"))
             return true;
 
+        $this->setError(' error updateing user , '.System::Get('db')->getDBErrors());
         return false;
 
 
@@ -49,11 +51,13 @@ class usersModel extends model
         if(System::Get('db')->Delete('users',"WHERE `user_id`=$id"))
             return true;
 
+        $this->setError(' error delete user , '.System::Get('db')->getDBErrors());
         return false;
 
     }
 
     /**
+     * get all users
      * @param string $extra
      * @return array
      */
@@ -69,6 +73,7 @@ class usersModel extends model
     }
 
     /**
+     * get user by id
      * @param $id
      * @return mixed
      */
@@ -81,12 +86,23 @@ class usersModel extends model
     }
 
 
+    /**
+     * get Users By Group
+     * @param $groupId
+     * @param string $extra
+     * @return array
+     */
     public function getUsersByGroup($groupId,$extra='')
     {
         return $this->getUsers("WHERE `user_id`=$groupId $extra");
 
     }
 
+    /**
+     * search users by keyword
+     * @param $keyword
+     * @return array
+     */
     public function searchUsers($keyword)
     {
         return $this->getUsers("WHERE `users`.`username` LIKE '%$keyword%' OR `users`.`email` LIKE '%$keyword%'");

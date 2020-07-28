@@ -1,25 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: محمد حمدى
- * Date: 7/22/20
- * Time: 10:42 AM
- */
 
 class usersController extends controller
 {
 
     private $usersModel;
 
-
     public function __construct($usersModel)
     {
         $this->usersModel = $usersModel;
     }
 
-
     public function usersLogin()
     {
+
+        if(checkLogin())
+            invalidRedirect();
 
         if(isset($_POST['submit']))
         {
@@ -28,8 +23,10 @@ class usersController extends controller
 
             if($this->usersModel->login($username,$password))
             {
-                $_SESSION['user'] = $this->usersModel->getUserData();
-                echo 'welcome user';
+                $userData = $this->usersModel->getUserData();
+                $_SESSION['user'] = $userData;
+
+                invalidRedirect();
             }
             else
             {

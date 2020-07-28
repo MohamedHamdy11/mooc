@@ -19,6 +19,7 @@ class coursesCategoriesModel extends model
         if(System::Get('db')->Insert('courses_categories',$dataArray))
             return true;
 
+        $this->setError(' error adding category , '.System::Get('db')->getDBErrors());
         return false;
     }
 
@@ -34,12 +35,13 @@ class coursesCategoriesModel extends model
         if(System::Get('db')->Update('courses_categories',$dataArray,"WHERE `category_id`=$id"))
             return true;
 
+        $this->setError(' error updateing category , '.System::Get('db')->getDBErrors());
         return false;
 
     }
 
     /**
-     * delete Course
+     * delete Category
      * @param $id
      * @return bool
      */
@@ -48,6 +50,7 @@ class coursesCategoriesModel extends model
         if(System::Get('db')->Delete('courses_categories',"WHERE `category_id`=$id "))
             return true;
 
+        $this->setError(' error deleteing category , '.System::Get('db')->getDBErrors());
         return false;
 
     }
@@ -60,14 +63,13 @@ class coursesCategoriesModel extends model
      */
     public function getCategories($extra='')
     {
-        System::Get('db')->Execute("SELECT * FROM `courses_categories` $extra");
+        System::Get('db')->Execute("SELECT `courses_categories`.*,`users`.`username` FROM `courses_categories` LEFT JOIN `users` ON `courses_categories`.`created_by`=`users`.`user_id` $extra");
 
         if(System::Get('db')->AffectedRows()>0)
             return System::Get('db')->GetRows();
 
         return [];
     }
-
 
     /**
      * get category by id
