@@ -2,81 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64956870-a1c8-47f2-b1f6-5db470c9445c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/addcategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/deletecategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/updatecategory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/Redirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/controllers/adminCategoriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/general.functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/addcategory.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/categories.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/addusergroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/deleteusergroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/updateusergroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/usersgroups.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/controllers/adminUsersGroupsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back/admin/addusergroup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back/admin/updateCategory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back/admin/updateusergroup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back/admin/usersgroups.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/advanced_form_components.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/advanced_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/basic_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/blank.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/boxed_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/calendar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/chartjs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/dropzone.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/dynamic_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/editable_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/flot_chart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/font_awesome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/form_component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/form_validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/form_wizard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/general.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/google_maps.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/grids.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/horizontal_menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/image_cropping.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/inbox.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/index new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/inline_editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/invoice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/language_switch_bar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/lock_screen.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/morris.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/nestable.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/product_details.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/product_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/profile-activity.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/profile-edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/responsive_table.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/search_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/slider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/todo_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/widget.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatlab/xchart.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/globals.php" beforeDir="false" afterPath="$PROJECT_DIR$/globals.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/controllers/adminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/adminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/controllers/controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/controllers/usersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/usersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesCategoriesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesCategoriesModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesLessonsCommentModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesLessonsCommentModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesLessonsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesLessonsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesStudentsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesStudentsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/usersGroupsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/usersGroupsModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/usersModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/usersModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/mysql.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/mysql.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,56 +26,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/back/admin/categories.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/addcategory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/controllers/adminCategoriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/back/admin/addcategory.html">
+        <entry file="file://$PROJECT_DIR$/includes/controllers/adminUsersGroupsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/back/admin/updateusergroup.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/back/admin/menu.html">
+        <entry file="file://$PROJECT_DIR$/templates/back/admin/usersgroups.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1269">
-              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+            <state relative-caret-position="837">
+              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/back/admin/index.html">
+        <entry file="file://$PROJECT_DIR$/admin/updateusergroup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="189">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -156,6 +75,7 @@
     <findStrings>
       <find>css/</find>
       <find>img/</find>
+      <find>$message</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -171,9 +91,7 @@
         <option value="$PROJECT_DIR$/includes/config.php" />
         <option value="$PROJECT_DIR$/includes/System.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
-        <option value="$PROJECT_DIR$/includes/mysql.php" />
         <option value="$PROJECT_DIR$/includes/models/model.php" />
-        <option value="$PROJECT_DIR$/includes/controllers/controller.php" />
         <option value="$PROJECT_DIR$/includes/models/usersModel.php" />
         <option value="$PROJECT_DIR$/includes/models/coursesLessonsCommentModel.php" />
         <option value="$PROJECT_DIR$/includes/models/coursesModel.php" />
@@ -184,7 +102,6 @@
         <option value="$PROJECT_DIR$/globals.php" />
         <option value="$PROJECT_DIR$/includes/controllers/usersController.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/includes/general.functions.php" />
         <option value="$PROJECT_DIR$/includes/models/coursesLessonsModel.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/logout.php" />
@@ -194,20 +111,31 @@
         <option value="$PROJECT_DIR$/includes/models/coursesCategoriesModel.php" />
         <option value="$PROJECT_DIR$/admin/deletecategory.php" />
         <option value="$PROJECT_DIR$/admin/updatecategory.php" />
-        <option value="$PROJECT_DIR$/includes/controllers/adminCategoriesController.php" />
         <option value="$PROJECT_DIR$/admin/addcategory.php" />
         <option value="$PROJECT_DIR$/templates/back/admin/addcategory.html" />
         <option value="$PROJECT_DIR$/templates/back/admin/menu.html" />
         <option value="$PROJECT_DIR$/templates/back/admin/index.html" />
         <option value="$PROJECT_DIR$/templates/back/admin/footer.html" />
         <option value="$PROJECT_DIR$/templates/back/admin/categories.html" />
+        <option value="$PROJECT_DIR$/templates/back/admin/updateCategory.html" />
+        <option value="$PROJECT_DIR$/includes/general.functions.php" />
+        <option value="$PROJECT_DIR$/includes/mysql.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/controller.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/adminCategoriesController.php" />
+        <option value="$PROJECT_DIR$/admin/usersgroups.php" />
+        <option value="$PROJECT_DIR$/templates/back/admin/usersgroups.html" />
+        <option value="$PROJECT_DIR$/admin/deleteusergroup.php" />
+        <option value="$PROJECT_DIR$/admin/addusergroup.php" />
+        <option value="$PROJECT_DIR$/templates/back/admin/addusergroup.html" />
+        <option value="$PROJECT_DIR$/templates/back/admin/updateusergroup.html" />
+        <option value="$PROJECT_DIR$/admin/updateusergroup.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/adminUsersGroupsController.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="y" value="3" />
-    <option name="width" value="738" />
+    <option name="x" value="-17" />
+    <option name="width" value="746" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -257,12 +185,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mooc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mooc" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,11 +241,16 @@
       <workItem from="1595805791807" duration="1297000" />
       <workItem from="1595807727904" duration="3435000" />
       <workItem from="1595837780750" duration="8683000" />
+      <workItem from="1595899881753" duration="592000" />
+      <workItem from="1595976102606" duration="9901000" />
+      <workItem from="1597012404273" duration="1914000" />
+      <workItem from="1597014679370" duration="604000" />
+      <workItem from="1597016788274" duration="1189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71192000" />
+    <option name="totallyTimeSpent" value="85392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,9 +262,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="3" width="738" height="735" extended-state="0" />
+    <frame x="-17" y="0" width="746" height="735" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49752474" weight="0.21533923" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49752474" weight="0.27696794" />
       <window_info id="Structure" order="1" sideWeight="0.50247526" side_tool="true" weight="0.20501475" />
       <window_info id="Favorites" order="2" sideWeight="0.50247526" side_tool="true" weight="0.20501475" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,23 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/mysql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="212" column="14" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
-          <folding>
-            <element signature="e#8#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
@@ -463,13 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/general.functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/Redirect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -522,55 +425,10 @@
     <entry file="file://$PROJECT_DIR$/templates/back/admin/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/adminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/categories.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/updatecategory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/models/coursesCategoriesModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="62" column="7" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/back/admin/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/back/admin/categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -594,29 +452,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/back/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="1701">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/deletecategory.php">
+    <entry file="file://$PROJECT_DIR$/includes/models/coursesCategoriesModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="1472">
+          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/addcategory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="81">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/adminCategoriesController.php">
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/categories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+        <state relative-caret-position="500">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -624,6 +485,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/updatecategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1998">
+          <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+          <folding>
+            <element signature="e#8#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/general.functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/updateCategory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/deletecategory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/adminCategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/usersgroups.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="30" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/addusergroup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/addusergroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/adminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/deleteusergroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/adminUsersGroupsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="84" column="20" selection-start-line="84" selection-start-column="20" selection-end-line="84" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/updateusergroup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/back/admin/usersgroups.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/updateusergroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>

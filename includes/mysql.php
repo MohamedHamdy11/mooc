@@ -194,10 +194,10 @@ class mysqlDBN
         $querystring = "UPDATE `{$table}` SET {$query} {$where}";
         //echo $querystring;
         $update = $this->Execute($querystring);
-        if($update)
-            return TRUE;
+        if($update && $this->AffectedRows() > 0)
+            return true;
 
-        return FALSE;
+        return false;
     }
 
 

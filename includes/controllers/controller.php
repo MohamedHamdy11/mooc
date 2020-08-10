@@ -2,6 +2,12 @@
 
 class controller
 {
+    public function __construct()
+    {
+        $this->clearErrors();
+        $this->clearSuccess();
+    }
+
     public function checkPermission($groupId)
     {
         if(isset($_SESSION['user']['user_group'])&&  $_SESSION['user']['user_group'] != $groupId)
@@ -51,5 +57,20 @@ class controller
 
     }
 
+    public function clearErrors()
+    {
+        unset($_SESSION['errors']);
+    }
+
+
+    public function setControllerSuccess($message)
+    {
+        $_SESSION['success'] = $message;
+    }
+
+    public function clearSuccess()
+    {
+        unset($_SESSION['success']);
+    }
 
 }
