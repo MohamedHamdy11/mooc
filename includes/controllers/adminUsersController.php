@@ -41,7 +41,7 @@ class adminUsersController extends controller
                 'username' => $username,
                 'password' => $password,
                 'email'    => $email,
-                'user_group' => $group,
+                'user_group' => $group
 
             );
 
@@ -58,7 +58,7 @@ class adminUsersController extends controller
         else
         {
 
-            $groups = $this->userGroupsModel->getUserGroups();
+            $groups = $this->userGroupsModel->getUserGroups();  //used val. in adduser.html
             include(VIEWS.'/back/admin/menu.html');
             include(VIEWS.'/back/admin/adduser.html');
 

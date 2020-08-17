@@ -86,13 +86,13 @@ class coursesModel extends model
 
     public function getCoursesByInstructorId($id)
     {
-        return $this->getCourses("WHERE `courses`.`course_instructor`=$id");
+        return $this->getCourses("WHERE `courses`.`course_instructor`=$id ORDER BY `course_id` DESC");
     }
 
 
 
     public function getCoursesByCategoryId($id)
     {
-        return $this->getCourses("WHERE `courses`.`course_category`=$id");
+        return $this->getCourses("WHERE `courses`.`course_category`=$id ORDER BY `course_id` DESC");
     }
 }

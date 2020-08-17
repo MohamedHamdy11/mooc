@@ -1,0 +1,56 @@
+
+<!-- page start-->
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                All Courses
+            </header>
+            <div class="panel-body">
+                <section id="unseen">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th>Course Title</th>
+                            <th>Category</th>
+                            <th>Instructor</th>
+                            <th>Control</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        if(count($courses)>0)
+                        {
+                            foreach($courses as $course)
+                            {
+                                $id         = $course['course_id'];
+                                $title      = $course['course_title'];
+                                $cid        = $course['course_category'];
+                                $catName    = $course['category_name'];
+                                $uid        = $course['course_instructor'];
+                                $username   = $course['username'];
+
+                                echo "<tr>
+                                    <td>$title</td>
+                                    <td><a href='courses.php?cid=$cid'>$catName</a></td>
+                                    <td><a href='courses.php?uid=$uid'><i class='icon-user'></i> $username</a></td>
+                                    <td>
+                                        <a href='courselessons.php?id=$id' class='btn btn-info'><i class='icon-refresh'></i> View Lessons</a>
+                                        <a href='deleteusercourse.php?id=$id' class='btn btn-danger'><i class='icon-trash'></i> Delete</a>
+                                    </td>
+                                </tr>";
+                            }
+                        }
+                        else
+                        {
+                            echo '<tr><td colspan="4">No Courses Found</td></tr>';
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>
