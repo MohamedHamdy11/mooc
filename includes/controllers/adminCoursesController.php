@@ -27,6 +27,8 @@ class adminCoursesController extends controller
         else
             $courses = $this->coursesModel->getCourses("ORDER BY `course_id` DESC");
 
+        $courses = do_filter('admin_courses_display',$courses);
+
         //view courses
         include(VIEWS.'/back/admin/header.html');
         include(VIEWS.'/back/admin/menu.html');
