@@ -14,6 +14,8 @@ class adminCoursesController extends controller
 
     public function getCourses()
     {
+        do_action('before_courses_display');
+
         $cid = (isset($_GET['cid']))? (int)$_GET['cid']:0;
         $uid = (isset($_GET['uid']))? (int)$_GET['uid']:0;
 
