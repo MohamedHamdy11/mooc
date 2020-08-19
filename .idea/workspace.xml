@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64956870-a1c8-47f2-b1f6-5db470c9445c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back/admin/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back/admin/courses.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +113,7 @@
       <workItem from="1597652909163" duration="1543000" />
       <workItem from="1597693430516" duration="7520000" />
       <workItem from="1597791000576" duration="86000" />
-      <workItem from="1597826230861" duration="5262000" />
+      <workItem from="1597826230861" duration="6599000" />
     </task>
     <servers />
   </component>
@@ -149,10 +149,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="130" y="88" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597704273108" />
-    <state x="175" y="289" key="NewPhpFileDialog" timestamp="1597830295966">
+    <state x="175" y="289" key="NewPhpFileDialog" timestamp="1597877373456">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="289" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597830295966" />
+    <state x="175" y="289" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597877373456" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597536288825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

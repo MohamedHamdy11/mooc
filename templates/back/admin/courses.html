@@ -30,11 +30,12 @@
                                 $catName    = $course['category_name'];
                                 $uid        = $course['course_instructor'];
                                 $username   = $course['username'];
+                                $rate = (isset($course['rate']))? $course['rate']:0;
 
                                 echo "<tr>
                                     <td>$title</td>
                                     <td><a href='courses.php?cid=$cid'>$catName</a></td>
-                                    <td><a href='courses.php?uid=$uid'><i class='icon-user'></i> $username</a></td>
+                                    <td><a href='courses.php?uid=$uid'><i class='icon-user'></i> $username</a> ($rate) </td>
                                     <td>
                                         <a href='courselessons.php?courseid=$id' class='btn btn-info'><i class='icon-refresh'></i> View Lessons</a>
                                         <a href='deleteusercourse.php?id=$id' class='btn btn-danger'><i class='icon-trash'></i> Delete</a>
