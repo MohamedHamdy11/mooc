@@ -1,0 +1,55 @@
+
+<!-- page start-->
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Lessons For : <?php echo $course['course_title']; ?> Course
+            </header>
+            <div class="panel-body">
+                <section id="unseen">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <thead>
+                        <tr>
+                            <th>Lesson Title</th>
+                            <th>Lesson Course</th>
+                            <th>Instructor</th>
+                            <th>Control</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                        if(count($coursesLessons)>0)
+                        {
+                        foreach($coursesLessons as $Lesson)
+                        {
+                            $id         = $Lesson['lesson_id'];
+                            $title      = $Lesson['lesson_title'];
+                            $courseid   = $Lesson['lesson_course'];
+                            $courseName = $Lesson['course_title'];
+                            $uid        = $Lesson['lesson_instructor'];
+                            $username   = $Lesson['username'];
+
+                        echo "<tr>
+                            <td>$title</td>
+                            <td>$courseName</td>
+                            <td><a href='courses.php?uid=$uid'><i class='icon-user'></i> $username</a></td>
+                            <td>
+                                <a href='deletelesson.php?lessonid=$id' class='btn btn-danger'><i class='icon-trash'></i> Delete</a>
+                            </td>
+                        </tr>";
+                        }
+                        }
+                        else
+                        {
+                        echo '<tr><td colspan="4">No Lessons Found For This Course</td></tr>';
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>

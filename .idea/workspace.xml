@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64956870-a1c8-47f2-b1f6-5db470c9445c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/searchcourses.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/admin/courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/controllers/adminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/adminUsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/models/coursesModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/models/coursesModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back/admin/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back/admin/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/courselessons.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/courselessons.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globals.php" beforeDir="false" afterPath="$PROJECT_DIR$/globals.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back/admin/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back/admin/courses.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,9 @@
       <workItem from="1597508921428" duration="5736000" />
       <workItem from="1597622011304" duration="4203000" />
       <workItem from="1597652909163" duration="1543000" />
-      <workItem from="1597693430516" duration="2194000" />
+      <workItem from="1597693430516" duration="7520000" />
+      <workItem from="1597791000576" duration="86000" />
+      <workItem from="1597826230861" duration="2790000" />
     </task>
     <servers />
   </component>
@@ -135,26 +136,34 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="110" y="100" width="617" height="535" key="DiffContextDialog" timestamp="1597279321216">
+    <state x="110" y="100" width="617" height="535" key="DiffContextDialog" timestamp="1597704892989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="110" y="100" width="617" height="535" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1597279321216" />
+    <state x="110" y="100" width="617" height="535" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1597704892989" />
     <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1597536283296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597536283296" />
-    <state x="175" y="289" key="NewPhpFileDialog" timestamp="1597653488912">
+    <state x="130" y="88" key="NewPhpClassDialog" timestamp="1597704273108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="289" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597653488912" />
+    <state x="130" y="88" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1597704273108" />
+    <state x="175" y="289" key="NewPhpFileDialog" timestamp="1597708836336">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="289" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1597708836336" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597536288825">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597536288825" />
-    <state x="-7" y="164" key="run.anything.popup" timestamp="1597310429272">
+    <state x="183" y="278" key="VCS.ChangelistChooser" timestamp="1597704711450">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-7" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597310429272" />
+    <state x="183" y="278" key="VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728" timestamp="1597704711450" />
+    <state x="-9" y="165" key="run.anything.popup" timestamp="1597704867819">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="-9" y="165" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597704867819" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597625100328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

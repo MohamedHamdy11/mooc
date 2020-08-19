@@ -17,6 +17,12 @@ require(CONTROLLERS.'/controller.php');
 require(MODELS.'/model.php');
 require(INCLUDES.'/System.php');
 require(INCLUDES.'/mysql.php');
+require(INCLUDES.'/plugable.php');
 
 
 System::Set('db',new mysqlDBN());
+
+foreach (glob(PLUGINS.'/*.php') as $file)
+{
+    require($file);
+}
