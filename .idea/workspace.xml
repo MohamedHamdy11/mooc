@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64956870-a1c8-47f2-b1f6-5db470c9445c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/controllers/adminCoursesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +37,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>css/</find>
-      <find>img/</find>
-      <find>$message</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>../assets/back/img/</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,7 +102,8 @@
       <workItem from="1597652909163" duration="1543000" />
       <workItem from="1597693430516" duration="7520000" />
       <workItem from="1597791000576" duration="86000" />
-      <workItem from="1597826230861" duration="8250000" />
+      <workItem from="1597826230861" duration="11783000" />
+      <workItem from="1597966757720" duration="5808000" />
     </task>
     <servers />
   </component>
