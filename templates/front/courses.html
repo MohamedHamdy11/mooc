@@ -1,0 +1,50 @@
+
+<!--container start-->
+<div class="container">
+    <div class="gallery-container">
+
+
+
+        <ul id="filters" class="list-unstyled">
+            <li><a href="#" data-filter="*"> All</a></li>
+            <?php
+                foreach($categories as $category)
+                {
+                     $catid   = $category['category_id'];
+                     $catName = $category['category_name'];
+                     echo"<li><a href='#' data-filter='.cat_$catid'> $catName </a></li>";
+                }
+            ?>
+        </ul>
+
+
+
+        <div id="gallery" class="col-4">
+        <?php
+            foreach($courses as $course)
+            {
+                $courseId     = $course['course_id'];
+                $courseTitle  = $course['course_title'];
+                $courseCover  = $course['course_id'];
+                $courseCat    = $course['course_id'];
+        ?>
+
+            <div class="element cat_<?php echo $courseCat; ?> development item view view-tenth" data-zlname="reverse-effect">
+                <img src="uploads/<?php echo $courseCover; ?>" alt="" />
+                <div class="mask">
+                    <h2><?php echo $courseTitle; ?></h2>
+                    <a data-zl-popup="link" href="course.php?courseid=<?php echo $courseId; ?>">
+                        <i class="icon-link"></i>
+                    </a>
+                    <a data-zl-popup="link2" class="fancybox" rel="group" href="uploads/<?php echo $courseCover; ?>">
+                        <i class="icon-search"></i>
+                    </a>
+                </div>
+            </div>
+
+            <?php } ?>
+
+        </div>
+    </div>
+</div>
+<!--container end-->
